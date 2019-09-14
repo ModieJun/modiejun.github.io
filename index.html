@@ -1,163 +1,147 @@
-<!DOCTYPE>
 <html lang="en">
-    <head>
-        <meta charset="utf-8"/>
-         <title>Fashion</title>
-         <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
-         <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
-         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Junjie</title>
 
-         <style>
-             h2{e
-                 font-weight: 400;
-                 margin: 2.5em;
-                 letter-spacing: 0.2rem;
-             }
-             p{
-                 font-size: 1.5em;
-                 font-weight: 300;
-                 letter-spacing: 0.5rem;
-             }
-             .imgText{
-                font-size: 2.5em;
-                font-weight: 400;
-             }
-         </style>
-    </head>
-    <body>
-        <div>
-            <nav class="navbar navbar-expand-lg navbar-light">
+    <link href="styles/styles.css" rel="stylesheet" type="text/css">
 
-                <div class="class-sm">
-                    <a href="#" class="navbar-brand active">Fashion</a>
-                </div>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-                <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+</head>
 
-                <div class="col-sm collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item "><a class="nav-link" href="#">Collection</a></li>
-                        <li class="nav-item "><a class="nav-link" href="#">Essentials</a></li>
-                        <li class="nav-item "><a class="nav-link" href="#">Shop</a></li>
-                    </ul>
-                </div>
+<body style="height:100%;">
 
-                <div class="col-sm collapse justify-content-end text-right navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ">
-                        <li class="nav-item "><a class="nav-link" href="#">Ambassadors</a></li>
-                        <li class="nav-item "><a class="nav-link" href="#">The Brand</a></li>
-                    </ul>
-                </div>
-            </nav>
+    <audio controls autoplay style="position: fixed; z-index: 1;margin-left:-80px;margin-top: 10px">
+        <source src="./Music/BetterDays.mp3" type="audio/mp3" />
+        <embed height="100" width="100" src="/Music/BetterDays.mp3"/>
+    </audio>
+
+    <div data-aos="zoom-in" data-aos-duration="2000" class="cover fullheight">
+        <div class="cover_label">
+            <center><span>JUN</span>JIE</center>
+        </div>
+    </div>
+
+    <div class="card" data-aos="fade-up" data-aos-easing='ease-in-sine' data-aos-duration="1000">
+        <div class="container">
+            <center>
+                <img src="./images/profileimg.jpg" alt="JUNJIE" style="width:12%">
+
+                <h2><b><br>林俊杰</b></h2>
+                <h2><b>JUNJIE LIN</b></h2>
+                <p>University: Jinan University</p>
+                <p>Major: Computer Science and Technology</p>
+            </center>
+        </div>
+
+        <br>
+        <div data-aos="flip-left" class="info_card">
+            <h1 id="personalInfo">Personal Info</h1>
+            <table>
+                <tr>
+                    <td>Age:</td>
+                    <td>21 </td>
+                </tr>
+                <tr>
+                    <td>Place of Birth: </td>
+                    <td>South Africa</td>
+                </tr>
+                <tr>
+                    <td>Citenzenship: </td>
+                    <td>Chinese</td>
+                </tr>
+                <tr>
+                    <td>Currently situated:</td>
+                    <td>Guangzhou , China</td>
+                </tr>
+                <tr>
+                    <td>Languages:</td>
+                    <td>English, Chinese</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="info_card" data-aos="flip-right">
+            <h1 id="contact">Social and Contacts</h1>
+            <table>
+                <tr>
+                    <td>Github:</td>
+                    <td>Go to my Github: <a href="http://www.github.com/modiejun">github.com/Modiejun</a></td>
+                </tr>
+                <tr>
+                    <td>LinkedIN:</td>
+                    <td>Profile <a href="https://www.linkedin.com/in/junjie-lin-73385b167">Here</a></td>
+                </tr>
+                <tr>
+                    <td>Instagram:</td>
+                    <td>Profile <a href="https:/www.instagram.com/modiejun">Here</a></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td>Send me an <a href="mailto: junjielin@stu2016.jnu.edu.cn">email</a></td>
+                </tr>
+            </table>
+        </div>
+        <div class="info_card" data-aos="flip-left">
+            <h1 id="contact">Projects</h1>
+            <table>
+                <tr>
+                    <td>WebApp</td>
+                    <td>Go to my Github: <a href="http://www.github.com/modiejun">github.com/Modiejun</a></td>
+                </tr>
+                <tr>
+                    <td>LinkedIN:</td>
+                    <td>Profile <a href="https://www.linkedin.com/in/junjie-lin-73385b167">Here</a></td>
+                </tr>
+                <tr>
+                    <td>Instagram:</td>
+                    <td>Profile <a href="https:/www.instagram.com/modiejun">Here</a></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td>Send me an <a href="mailto: junjielin@stu2016.jnu.edu.cn">email</a></td>
+                </tr>
+            </table>
         </div>
 
 
-        <div>
-            <div>
-                <audio autoplay>
-                    <source src="L.mp3">
-                </audio>
+    </div>
+    <footer class="bottompage">
+
+        <div class="footerLinks">
+            <div class="footerLink">
+                <a href="#">Get To the Top</a>
             </div>
-            <div data-aos="fade-right" data-aos-easing='ease-in-sine'  class="mb-5">
-                <div  class="w-50  mt-5 mx-auto shadow-lg p-3 mb-5 bg-white rounded col">
-                        <img class="img-fluid "src="ASAPferg.jpg" alt=""  >
-                        <p class="imgText mt-3  text-center">A$AP Ferg</p>
-                </div>
-                <div class="text-center align-items-center mt-5 mb-5 col">
-                    <h2>Darold D. Brown Ferguson Jr.</h2>
-                    <p>Born:1988</p>
-                    <p><strong>Music</strong>:  TRAP LORD<br/>ALWAYS STRIVE AND PROSPER <br/> STILL STRIVING</p>
-                    <br>
-                    <p><strong>Fashion</strong>: KSUBI <br/>BAPE <br>VOGUE <br>RAF-SIMONS <br> HOOD BY AIR <br>JEREMY SCOTT</p>
-                    <br>
-                    <p><strong>Signature Style</strong>: PRIMARY COLORS <br> MOODY-STREET-STYLE</p>
-                </div>
+            <div class="footerLink">
+                <a href="#personalInfo">Go to Personal Info</a>
             </div>
 
-            <div class="container-fluid">
-                <div data-aos='fade-up' data-aos-easing='ease-in-sine'class="row">
-                    <div class="text-center align-items-center mt-5 mb-5 col">
-                        <h2>Rakim Mayers</h2>
-                        <p>Born:1988</p>
-                        <p><strong>Music</strong>:  LONG. LIVE. A$AP<br/>TESTING <br/> WANGSAP <br/>LIVE.LOVE A$AP</p>
-                        <br><br>
-                        <p><strong>Fashion</strong>: DIOR <br/>PRADA <br>VOGUE <br>BALENCIAGA <br> CARTIER <br>RAF-SIMONS <br>ALEXANDER WANG</p>
-                        <br><br>
-                        <p><strong>Signature Style</strong>: STREET GOTH <br> HIGH FASHION</p>
-                    </div>
-                    <div class="col justify-center">
-                      <div  class=" w-100  ml-auto  shadow-lg p-3 mb-5 bg-white rounded  col">
-                        <img  class="img-fluid "src="ASAProcky.jpg" alt="">
-                        <p class="imgText mt-3  text-center">A$AP Rocky</p>
-                      </div>
-                    </div>
-
-                </div>
-            </div>
-
-
-            <div class="container-fluid">
-                <div data-aos='fade-right' data-aos-easing='ease-in-sine' class="row">
-                  <div class="col">
-                    <div  class="w-100 ml-3 shadow-lg p-3 mb-5 bg-white rounded">
-                      <img class="img-fluid"src="jadensmith.jpg" alt="">
-                      <p class="imgText mt-3  text-center">SYRE</p>
-                    </div>
-                  </div>
-
-                    <div class="text-center align-items-center mt-5 mb-5 col">
-                            <h2>Jaden Smith</h2>
-                            <p>Born:1998</p>
-                            <p><strong>Music</strong>:  COOL TAPE VOL1<br/>COOL TAPE VOL 2 <br/> SYRE</p>
-                            <br><br>
-                            <p><strong>Fashion</strong>: MSFT <br/>PRADA <br>VOGUE <br>BALENCIAGA <br>ALEXANDER WANG <br></p>
-                            <br><br>
-                            <p><strong>Signature Style</strong>: STREET GOTH <br> HIGH FASHION</p>
-                    </div>
-                </div>
-            </div>
-
-          <div class="container-fluid">
-            <div data-aos='zoom-up' data-aos-easing="ease-in-sine" >
-              <div class=" w-50  mb-5 mx-auto  shadow-lg p-3 mb-5 bg-white rounded ">
-                <img  class="img-fluid"src="kanyewest.JPG" alt="">
-                <p class="imgText mt-3  text-center">Kanye West</p>
-              </div>
-              <div class="text-center align-items-center mt-5 mb-5 col">
-                <h2>Kanye West</h2>
-                <p>Born:1977</p>
-                <p><strong>Music</strong>:  THE DARK TWISTED FANTASY<br/>THE COLLEGE DROPOUT <br/> WATCH THE THRONE <br> THE LIFE OF PABLO </p>
-                <br><br>
-                <p><strong>Fashion</strong>: YEEZY <br/>OFF-WHITE <br>GUCCI <br>LUIS VUITTON <br></p>
-                <br><br>
-                <p><strong>Signature Style</strong>: STREET WEAR <br> HIGH FASHION <br>CRAZY <br>SHIA LE BOUF</p>
-              </div>
-            </div>
-          </div>
-
-            <div data-aos='fade-left' class="w-50  mb-5 mr-5 ml-auto  shadow-lg p-3 mb-5 bg-white rounded ">
-                <img  class="img-fluid"src="virgolabloh.jpg" alt="">
-                <p class="imgText mt-3  text-center">Virgol Abloh</p>
-            </div >
-
-            <div data-aos='fade-right' class="w-50  mb-5 ml-5 shadow-lg p-3 mb-5 bg-white rounded ">
-                <img class="img-fluid"src="Travis_Scott.png" alt="">
-                <p class="imgText mt-3  text-center">Travis $cott</p>
+            <div class="footerLink">
+                <a href="#contact">Go to Contact</a>
             </div>
 
         </div>
-        <script>
-            AOS.init();
-        </script>
-    <footer>
+
+        <div class="policy">
+            <center>
+                <p>While using this site, you agree to have read and accepted our terms of use, cookie and privacy
+                    policy. Copyright 1999-2019 by Reference Data. All Rights Reserved.
+            </center>
+        </div>
+
+        <center>Created by Junjie Lin</center>
 
     </footer>
-    </body>
+
+    <!-- AOS STUFF -->
+    <script>
+        AOS.init();
+    </script>
+</body>
+
 </html>

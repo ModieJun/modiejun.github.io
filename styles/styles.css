@@ -13,8 +13,8 @@
 
 
 .container {
-    padding-top:15px;
-	padding-bottom: 10px;
+    padding-top:5px;
+	padding-bottom: 5px;
 	padding-left: 20px;
 	padding-right: 10px;
 }
@@ -90,21 +90,23 @@ p,a,tr{
 }
 
 .cover{
-    background-image: url("../bg2.jpg") ;
+    background-image: url("../images/bg1.jpg") ;
     background-position: center  ;
     background-size: cover;
-    font:bold;
     color:rgb(255, 255, 255);
-    letter-spacing: 30px;
     text-align: center;
-    font: bold;
-    font-size: 70px;
 }
 .cover_label{
     position: relative;
-    top: 50%;
+    top: 45%;
     color: rgba(255, 255, 255, 0.925);
-
+    letter-spacing: 30px;
+    font: bold;
+    font-size: 80px;
+}
+/* Special selector that targets the span in the CoverLbl */
+.cover_label span{
+    color: black;
 }
 .card{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -143,6 +145,15 @@ td{
     margin-left: 150px;
     margin-right: 150px;
     margin-bottom: 50px;    
+}
+.footerLinks{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.footerLink{
+    flex: 1 1 0px;
 }
 
 
