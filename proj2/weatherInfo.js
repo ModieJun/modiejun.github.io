@@ -32,7 +32,7 @@ Vue.component('async-weather', {
     methods: {
         async fetchWeather() {
             this.info = await getWeatherForSearch(this.param, this.unit);
-            console.log(this.info);
+            // console.log(this.info);
             this.display = getWeatherInfo(this.info);
             this.mapSearch();
             this.forecast = await forecast(this.param, this.unit);
