@@ -1,70 +1,20 @@
 .position_center{
-	background-image: url("../bg2.jpg") ;
-    background-position: center  ;
+    background-image: url("../images/bgAll.jpg");
+    background-position: center;
     background-size: cover;
-    padding: 23%;
-	text-align: center;
-	color: lightgreen;
-	font-size: 70px;
-	font:bold;
-    color:rgb(255, 255, 255);
-    
+    padding: 80px;
+    text-align: center;
+    font:bold;
+    color:white;
 }
-
-
-.container {
-    padding-top:5px;
-	padding-bottom: 5px;
-	padding-left: 20px;
-	padding-right: 10px;
-}
-
-
-
-.bottompage{
-	position:relative;
-	padding-bottom: 50px;
-	padding-top: 25px;
-    color: gray;
-    
-}
-
-audio {
-	padding-left:100px;
-}
-
-.description{
-	margin: 0;
-    padding: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    border: 0;
-}
-
-.content {
-	color: black;
-	font: bold;
-}
-/* 
-h6{
-	color: lightgrey;
-} */
-
-.img-container {
-	width: 96%;
-	max-width: 1020px;
-}
-
-.row {
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-	margin-right: auto;
-	margin-left: auto;
-}
-
 /* MINE ------------------------*/
+.container{
+ padding-top: 15px;
+ padding-bottom: 10px;
+ padding-left: 10px;
+ padding-right: 10px;
+}
+
 html{
     height: 100%;
     min-height: 100% !important;
@@ -80,14 +30,31 @@ h1,h2,h3,h4,h5,h6{
     letter-spacing: 3px;
 }
 
-h2{
+h2,h3{
     font-size: 30px;
 }
 
-p,a,tr{
+p,a,tr,thead{
     font-size: 20px;
     letter-spacing: 1px;
 }
+
+.navigate{
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color: black
+}
+/* 
+.nav_links{
+    margin-top: 10px;
+    margin-bottom: 10px;
+} */
+.navLink{
+    
+}
+
+
 
 .cover{
     background-image: url("../images/bg1.jpg") ;
@@ -95,6 +62,7 @@ p,a,tr{
     background-size: cover;
     color:rgb(255, 255, 255);
     text-align: center;
+    width: 100%;;
 }
 .cover_label{
     position: relative;
@@ -134,9 +102,13 @@ p,a,tr{
 }
 
 /* Targeting row entity  pattern*/
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
 td{
     padding-top: 20px;
-    padding-left:  100px;
+    padding-left: 50px;
     letter-spacing: 2px;
 }
 
@@ -155,7 +127,13 @@ td{
 .footerLink{
     flex: 1 1 0px;
 }
-
+.bottompage{
+	position:relative;
+	padding-bottom: 50px;
+	padding-top: 25px;
+    color: gray;
+    
+}
 
 
 
