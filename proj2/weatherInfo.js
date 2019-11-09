@@ -2,7 +2,7 @@
 Vue.component('async-weather', {
     template: `
     <div class="">
-        <div class="container mt-3 pt-3">
+        <div class="container mt-3 pt-3 border solid">
             <h3 class="h3">Search City</h3>
             <form class="form-group form-inline ml-5 mt-3" onsubmit="return false;">
                 <input v-model="param" class="form-control w-25 ml-2" placeholder="City Name">
@@ -12,7 +12,8 @@ Vue.component('async-weather', {
                 </select>
                 <button v-on:click=\"fetchWeather()\" class="ml-2 btn btn-block w-25 btn-outline-primary ">search</button>
                 <p class="blockquote-footer mt-2 alert-danger ">Please search city in English for best results</p>
-            </form>
+                </form>
+                <p class="blockquote-footer alert-danger">Currently only supports english since weather api is not from China</p>
         </div>
         <current-weather v-if="info" v-bind:info="this.info" v-bind:unit="this.unit"></current-weather>
         <br>
@@ -23,7 +24,7 @@ Vue.component('async-weather', {
     data() {
         return {
             param: '',
-            info:'',
+            info: '',
             display: '',
             forecast: '',
             unit: 'metric',
