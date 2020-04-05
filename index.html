@@ -1,206 +1,182 @@
-<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, maximum-scale=3,minumum-scale=1,user-scalale=no">
-    <meta name="HanheldFriendly" content="true">
-    <meta name="MobileOptimized" content="320">
-    <meta name="full-screen" content="yes">
-    <meta name="browser-mode" content="application">
-    <title>Junjie</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <link href="styles/styles.css" rel="stylesheet" type="text/css">
-    <link href="styles/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <!-- AOS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body style="height:100%; ">
-<!-- 
-    <audio controls style="">
-        <source src="./Music/BetterDays.mp3" type="audio/mp3" />
-        <embed height="100" width="100" src="/Music/BetterDays.mp3" />
-    </audio> -->
-    <div id="nav" class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a href="" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item dropdown ml-5">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Projects
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Project 1</a>
-                        <a class="dropdown-item" href="/proj2/proj2.html">Project 2</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
+<body>
+    <div class="parallax-container">
+        <!-- Parralax Text -->
+        <div class="section " style="margin-top: 20px;">
+            <div class="container brown z-depth-2" style="padding-bottom: 20px;">
+                <br>
+                <br>
+                <h1 class="header center white-text  light ">
+                    JUNJIE LIN
+                </h1>
+                <div class=" center">
+                    <h6 class=" white-text ">
+                        Student
+                    </h6>
+                </div>
+                <div class="row center">
+                    <h5 class="col l12 white-text light ">
+                        "Hardwork beats talent when talent doesn't work hard"
+                    </h5>
+                </div>
+                <div class="row center">
+                    <!-- Button? -->
+                </div>
+            </div>
+        </div>
+        <!-- Parralax Image -->
+        <div class="parallax">
+            <img src="./images/parallax1.jpg" alt=""
+                style="transform: translate3d(-50%, 225.246px, 0px); opacity: 1;max-width:100%;">
+        </div>
+    </div>
+    <div class="container">
+        <div class="section">
+            <div class="row">
+                <div class="col l4 s12 ">
+                    <div class="icon-block">
+                        <h2 class="center brown-text   ">
+                            <i class="material-icons large ">code</i>
+                        </h2>
+                        <h5 class="center">Abilities</h5>
+                        <br>
+                        <ul class=" container light">
+                            <li>Python</li>
+                            <li>Django</li>
+                            <li>Data Sceince</li>
+                            <li>JAVA</li>
+                        </ul>
                     </div>
-                </li>
-            </ul>
-        </div>
-        <div class="mx-auto order-0">
-            <a class="navbar-brand mx-auto" href="#"><span style="font-style: italic;">Project 1/Home</span></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
-        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-            <!-- <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Right</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-            </ul> -->
+                </div>
+                <div class=" col l4 s12 ">
+                    <div class="icon-block">
+                        <h2 class="center brown-text">
+                            <i class="material-icons large ">portrait</i>
+                        </h2>
+                        <h5 class="center">Personal Skills</h5>
+                        <br>
+                        <ul class="container light">
+                            <li>Punctual</li>
+                            <li>Time management</li>
+                            <li>Integrity</li>
+                            <li>Vocal</li>
+                            <li>Team-player-leader</li>
+                            <li>Billingual (English, Chinese)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" col l4 s12 ">
+                    <div class="icon-block">
+                        <h2 class="center brown-text">
+                            <i class="material-icons large ">school</i>
+                        </h2>
+                        <h5 class="center">Background</h5>
+                        <br>
+                        <ul class="light ">
+                            <li>Jinan University - Computer Science</li>
+                            <li>City University - Business Information System</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-
-    <div data-aos="zoom-in" data-aos-duration="2000" class="cover fullheight">
-        <div class="cover_label">
-            <center><span>JUN</span>JIE</center>
+    <div class="parallax-container valign-wrapper">
+        <div class="section  row ">
+            <div class=" col l12">
+                <div class=" center">
+                    <h1 class="header col s12 l12 light white-text">Project links</h5>
+                </div>
+            </div>
         </div>
+        <div class="parallax"><img src="./images/parallax2.jpg" alt="Unsplashed background img 2"
+                style="opacity: 1; transform: translate3d(-50%, 151.794px, 0px); max-width: 100%;"></div>
     </div>
 
-    <div class="card" data-aos="fade-up" data-aos-easing='ease-in-sine' data-aos-duration="1000">
+
+    <div class="container" style="padding-top: 20px;padding-bottom: 50px;">
+        <div class="section">
+            <div class="row">
+                <div class="col l4 s12 ">
+                    <div class="icon-block">
+                        <h2 class="center brown-text   ">
+                            <i class="material-icons large ">cloud</i>
+                        </h2>
+                        <ul class="  light collection with-header" id='webapp-links'>
+                            <li class="center collection-header"><h5 >Web-Applications</h5></li>
+                            <li class="collection-item">Python</li>
+                            <li class="collection-item">Django</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" col l4 s12 ">
+                    <div class="icon-block">
+                        <h2 class="center brown-text">
+                            <i class="material-icons large ">library_books</i>
+                        </h2>
+                        
+                        <ul class=" light collection with-header" id='artile-links'>
+                            <li class="center collection-header"><h5 class="center">Articles</h5></li>
+                            <li class="collection-item">Time management</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" col l4 s12 ">
+                    <div class="icon-block">
+                        <h2 class="center brown-text">
+                            <i class="material-icons large ">ondemand_video</i>
+                        </h2>
+                        <ul class="light collection with-header">
+                            <li class="collection-header center"><h5 class="center">Videos</h5></li>
+                            <li class="collection-item">Jinan University - Computer Science</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="page-footer brown">
         <div class="container">
-            <center>
-                <img src="./images/profileimg.jpg" alt="JUNJIE" style="width:12%">
+            <div class="row">
+                <div class="col l4">
 
-                <h2><b><br>林俊杰</b></h2>
-                <h2><b>JUNJIE LIN</b></h2>
-                <p>University: Jinan University</p>
-                <p>Major: Computer Science and Technology</p>
-            </center>
-        </div>
+                </div>
+                <div class="col l8">
 
-        <br>
-        <div data-aos="flip-left" class="info_card">
-            <h1 id="personalInfo">Personal Info</h1>
-            <table>
-                <tbody>
-                    <tr>
-                        <td>Age:</td>
-                        <td>21 </td>
-                    </tr>
-                    <tr>
-                        <td>Place of Birth: </td>
-                        <td>South Africa</td>
-                    </tr>
-                    <tr>
-                        <td>Citenzenship: </td>
-                        <td>Chinese</td>
-                    </tr>
-                    <tr>
-                        <td>Currently situated:</td>
-                        <td>Guangzhou , China</td>
-                    </tr>
-                    <tr>
-                        <td>Languages:</td>
-                        <td>English, Chinese</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <div class="info_card" data-aos="flip-right">
-            <h1 id="contact">Social and Contacts</h1>
-            <table>
-                <tbody>
-                    <tr>
-                        <td>Github:</td>
-                        <td>Go to my Github: <a href="http://www.github.com/modiejun"
-                                target="_blank">github.com/Modiejun</a></td>
-                    </tr>
-                    <tr>
-                        <td>LinkedIN:</td>
-                        <td>Profile <a href="https://www.linkedin.com/in/junjie-lin-73385b167" target="_blank">Here</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Instagram:</td>
-                        <td>Profile <a href="https:/www.instagram.com/modiejun" target="_blank">Here</a></td>
-                    </tr>
-                    <tr>
-                        <td>Email:</td>
-                        <td>Send me an <a href="mailto: junjielin@stu2016.jnu.edu.cn">email</a></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="info_card" data-aos="flip-left">
-            <h1 id="contact">Projects</h1>
-            <table>
-                <tbody>
-                    <tr>
-                        <td>WebApp</td>
-                        <td>Go to my Github: <a href="http://www.github.com/modiejun"
-                                target="_blank">github.com/Modiejun</a></td>
-                    </tr>
-                    <tr>
-                        <td>LinkedIN:</td>
-                        <td>Profile <a href="https://www.linkedin.com/in/junjie-lin-73385b167" target="_blank">Here</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Instagram:</td>
-                        <td>Profile <a href="https:/www.instagram.com/modiejun" target="_blank">Here</a></td>
-                    </tr>
-                    <tr>
-                        <td>Email:</td>
-                        <td>Send me an <a href="mailto: junjielin@stu2016.jnu.edu.cn">email</a></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-
-    </div>
-    <footer class="bottompage">
-        <div class="footerLinks">
-            <div class="footerLink">
-                <a href="#">Get To the Top</a>
-            </div>
-            <div class="footerLink">
-                <a href="#personalInfo">Go to Personal Info</a>
-            </div>
-
-            <div class="footerLink">
-                <a href="#contact">Go to Contact</a>
+                </div>
             </div>
         </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2020 by JUNJIE LIN
+            </div>
 
-        <div class="policy">
-            <center>
-                <p>While using this site, you agree to have read and accepted our terms of use, cookie and privacy
-                    policy. Copyright 1999-2019 by Reference Data. All Rights Reserved.
-            </center>
         </div>
-
-        <center>Created by Junjie Lin</center>
     </footer>
 
-    <!-- AOS STUFF -->
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script>
-        AOS.init();
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.parallax');
+            var instances = M.Parallax.init(elems);
+        });
     </script>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
 </body>
 
 </html>
