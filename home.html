@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700,800" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <style> 
+        body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .left-panel, .profile-links{
+            letter-spacing: 3px;
+        }
+        a:link    {color:#000;}  /* unvisited link  */
+    a:visited {color:#000;}  /* visited link    */
+    a:hover   {color:#888;}  /* mouse over link */
+    a:active  {color:#000;}  /* selected link   */ 
+        .name-title{
+            font-size: 90px;
+            word-wrap: break-word;
+        }
+        #home-left{
+            letter-spacing: 1.5px;
+        }
+        
+        /* Background infor */
+        .background{
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+
+<body style="height: 100%; min-height: 100%;" >
+    <!-- Overall spacing -->
+
+    <div class="container-fluid d-flex flex-column min-vh-100 " >
+        <div class="row flex-grow-1" >
+            <!-- Content left  -->
+            <div class="col-3 p-5   text-white " style="background-color: #7a0014;">
+                <div style="height: 200px;">
+
+                </div>
+                <div class="left-panel">
+                    <h4>Name</h4>
+                    <p>JUNJIE LIN</p>
+
+                    <h4>Role</h4>
+                    <p>Developer/Analyst</p>
+
+                    <h4>Email</h4>
+                    <p>junjielin8888@gmail.com</p>
+
+                    <img src="images/name.png" class="img-fluid" alt="Junjie Lin">
+                </div>
+            </div>
+
+            <!-- Content right -->
+            <div class="container-fluid col d-flex flex-column  " >
+                <div class="row flex-grow-1" >
+                    <!-- Introduction -->
+                    <div id="home-left" class=" col-5 mt-5 p-4 pl-5  d-flex flex-column" >
+                        
+                        <h5 class="mt-5  pb-2">Hi my name is </h2>
+                        <h1 class="mt-5 mb-3"><span class="name-title">JUNJIE LIN</span></h1>
+                        
+                        <p>Interest in Web Application and Data analysis. Current graduate student at the City University of Hong Kong, 
+                            with a passion to create using Technology with the purpose of helping businesses
+                        </p>
+                        <div class="mt-4 row profile-links">
+                            <a href="#" class="col">LINKEDIN</a>
+                            <a href="#" class="col">GITHUB</a>
+                            <a href="#" class="col">INSTAGRAM</a>
+                        </div>
+                    </div>
+
+
+                    <!-- Intro right side  -->
+                    <!-- Image on the right to cover -->
+                    <div id="home-right " class="col   " style="background-image: url('./images/profile.jpg'); background-size: cover;" >
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid min-vh-100 flex-column d-flex " >
+        <div class="row flex-grow-1">
+            <!-- left -->
+            <div class="col-3"  style="background-image: url('./images/exp-bg.png'); background-size: cover; transform: translate(-50px);">
+                <!-- <h2  style="letter-spacing: 5px; width:max-content; transform: rotate(-90deg) translate(-350px,-50px);transform-origin: bottom ;">Accumulated Experience</h2> -->
+            </div>
+            <!-- right -->
+            <div class="col  text-white" style="background-color: #5c000f;">
+                <div class="row ">
+                    <div class="col d-flex flex-column pl-5 pr-5 pt-5 background">
+                        <h2>Background </h2>
+                        <div class="bg mt-2">
+                            <h6>2016-2020</h6>
+                            <h5><strong>Jinan Univeristy (China)</strong></h5>
+                            <p>Computer Science and Technology (B.Eng)</p>
+                            <ul>
+                                <li>GPA: 3.27/5</li>
+                                <li>Java</li>
+                                <li>Data Structure + Algorithms</li>
+                                <li>Database Systems</li>
+                                <li>Database Application Development</li>
+                            </ul>
+                        </div>
+                        <div class="bg mt-2">
+                            <h6>2018-2019</h6>
+                            <h5><strong> Technische Hochschule Ingolstadt </strong></h5>
+                            <p>Exchange Student Program (Germany)</p>
+                            <ul>
+                                <li>Artificial Intelligence & Machine Learning</li>
+                                <li>Software Development</li>
+                                <li>Python</li>
+                            </ul>
+                        </div>
+                        <div class="bg mt-2">
+                            <h6>2020-Now</h6>
+                            <h5><strong>City University Of Hong Kong</strong></h5>
+                            <p>Business Information Systems (MSC)</p>
+                            <ul>
+                                <li>Data Analysis</li>
+                                <li>Consulting Asia </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- EXPERIENCE -->
+                    <div class="col p-5"> 
+                        <h2>Experience</h2> 
+                        <div class="exp-info mt-3">
+                            <h5><strong> Project - Cloud Storage APP</strong></h5>
+                            <p>Creted a cloud storage application using Java and Spring boot.
+                            I used form based file uploads to store files on my server relative to the application jar folder. 
+                            Added features such as folder creation/deletion and navigating between folders.      
+                        </p>
+                            <ul>
+                                <li>Currently acts as a personal cloud storage.</li>
+                            </ul>
+                            <br>
+                        </div>
+                        <div class="exp-info mt-3">
+                            <h2>Learning Material</h2>
+                            <h5><strong>Algorithms</strong></h5>
+                            <p></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Travel ? Experience -->
+    <div class="container">
+
+    </div>
+        
+
+
+
+
+    <!-- JS Dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
