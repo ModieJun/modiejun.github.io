@@ -18,8 +18,7 @@ body{
     margin-left: 1.1em;
     display: block;
     color:#dddddd;
-    /* background-color: purple; */
-    /* opacity: 10; */
+    text-shadow: 2px 2px #ff0000;
 }
 .text-bg{
     /* background-color: purple; */
