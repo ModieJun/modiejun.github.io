@@ -13,14 +13,24 @@ body{
 }
 
 .leftText{
-    font-family:   'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: cursive;
     margin-top: 0.6em;
     margin-left: 1.1em;
     display: block;
+    color:#dddddd;
     /* background-color: purple; */
     /* opacity: 10; */
 }
+.text-bg{
+    /* background-color: purple; */
+    opacity: 0.8;
+}
 
+.time{
+    color:#dddddd;
+    font-family: cursive, Geneva, Tahoma, sans-serif;
+    opacity: 0.8;
+}
 
 .love{
     font-size: 0.8em;
@@ -33,7 +43,8 @@ small{
 }
 
 .heart{
-    color:indianred;
+    font-family: cursive;
+    color:indianred,;
     font-size: 1em;
     text-align: right;
 
