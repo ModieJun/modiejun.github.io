@@ -14,7 +14,7 @@ body{
 
 .leftText{
     font-family: cursive;
-    margin-top: 0.6em;
+    margin-top: 0.5em;
     margin-left: 1.1em;
     display: block;
     color:#dddddd;
@@ -32,8 +32,8 @@ body{
 }
 
 .love{
-    font-size: 0.8em;
     color:indianred;
+    font-size: 0.8em;
     font-weight: bold;
 }
 
@@ -41,9 +41,8 @@ small{
     font-size: 0.7em;
 }
 
-.heart{
+span.heart{
     font-family: cursive;
-    color:indianred,;
     font-size: 1em;
     text-align: right;
 
