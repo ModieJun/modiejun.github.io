@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>Junjie Loves Zihan</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body id="body">
+        <span class="leftText">
+            Junjie <br>
+            <span class="love">loves</span> <br>
+            Zihan<br/>
+            <span class="since"></span><br />
+            <span id="time">XXX.xxxxx</span><br />
+            <!-- <span class="days">days</span> -->
+        </span>
+        
+        <span class="heart"><3</span>
+
+        <script>
+    
+            function getLoveTime() {
+                //14. April 2016
+                var time = Date.now() - new Date(2017, 3 - 1, 12, 0, 0, 0, 0).getTime();
+                time = new Date(time);
+                return time / (1000*60*60*24);
+            }
+
+            function formatNumber(num, a){
+                num = num + "";
+                let before = num.split(".")[0];
+                let after = num.split(".")[1];
+                while(after.length < a)
+                    after += "0";
+                return before+"D " + "<br> <small>" + " " + after.slice(0,1) + "H <br>" 
+                    + after.slice(1,3) + "m <br> " + after.slice(3,5) + "s</small>";
+            }
+
+            setInterval(function(){
+                document.getElementById("time").innerHTML = formatNumber(Math.round(getLoveTime() * 100000) / 100000, 5);
+            }, 1000);
+            
+            // Slideshow for images
+            window.onload = function() {
+                var image=document.getElementById("body");
+                
+                var images=['./images/picture1.jpeg',
+                                './images/picture2.jpeg','./images/picture3.jpeg',
+                                './images/picture4.jpeg','./images/picture5.jpeg',
+                            ]
+                var index=0;
+                var interval = 2000;
+
+                function slide() {
+                    image.style.backgroundImage = "url(" + images[index++%images.length] + ")";
+                    console.log(image.style.backgroundImage);
+                    // image.src = img_array[index++%img_array.length];
+                    console.log("Change")
+                }
+
+                setInterval(()=>{
+                    console.log("hi");
+                    slide()
+                }, interval);
+            }
+
+
+        </script>
+
+    </body>
+</html>
