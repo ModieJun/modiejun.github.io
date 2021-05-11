@@ -47,3 +47,15 @@
   * @import "utilities/background-patterns";
   * @import "utilities/skew-transforms";
   */
+
+  body{
+    @apply p-0 m-0
+  }
+
+  .navlink-white{
+      @apply text-white font-extrabold text-lg
+  }
+/* Card */
+.card{
+    @apply  my-auto mx-auto flex flex-wrap flex-col p-4 shadow-xl max-w-lg  bg-white rounded-lg sm:flex-row sm:p-3 md:flex-nowrap transform duration-75 hover:-translate-y-2
+}
