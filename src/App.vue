@@ -1,6 +1,6 @@
 <template>
   <div id="app" class="min-w-screen w-screen relative">
-    <Navbar />
+    <Navbar class="bg-primary shadow-lg" />
     <Home/>
   </div>
 </template>

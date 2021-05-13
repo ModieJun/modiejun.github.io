@@ -47,15 +47,24 @@
   * @import "utilities/background-patterns";
   * @import "utilities/skew-transforms";
   */
+  @tailwind base;
 
   body{
     @apply p-0 m-0
   }
 
   .navlink-white{
-      @apply text-white font-extrabold text-lg
+      @apply text-white font-extrabold text-lg transform ease-in hover:scale-105
   }
 /* Card */
 .card{
-    @apply  my-auto mx-auto flex flex-wrap flex-col p-4 shadow-xl max-w-lg  bg-white rounded-lg sm:flex-row sm:p-3 md:flex-nowrap transform duration-75 hover:-translate-y-2
+    @apply  max-w-lg mx-auto bg-gray-50 rounded-xl shadow-md overflow-hidden md:max-w-2xl p-3  transform duration-75 hover:-translate-y-1
+}
+
+.link{
+  @apply hover:text-gray-400 
+}
+
+.btn{
+  @apply  rounded-lg shadow-2xl
 }
