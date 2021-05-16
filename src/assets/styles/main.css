@@ -58,13 +58,13 @@
   }
 /* Card */
 .card{
-    @apply  max-w-lg mx-auto bg-gray-50 rounded-xl shadow-md overflow-hidden md:max-w-2xl p-3  transform duration-75 hover:-translate-y-1
+    @apply mx-auto max-w-md w-full h-full bg-gray-50 rounded-xl shadow-md overflow-hidden p-3  transform duration-75 hover:-translate-y-1
 }
 
 .link{
-  @apply hover:text-gray-400 
+  @apply hover:text-blue-400 
 }
 
 .btn{
-  @apply  rounded-lg shadow-2xl
+  @apply  rounded-lg shadow-2xl;
 }

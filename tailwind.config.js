@@ -9,14 +9,15 @@ module.exports = {
         customRed:'#FF847C',
         black:'#2A363B',
       },
-      outline:{
-        primary : "2px solid #99B898"
-      }
+     ringColor:{
+       primary:'#99B898',
+     } 
     },
   },
   variants: {
     extend: {
-      outline: ['hover', 'active'],
+      ringWidth: ['hover', 'active','focus'],
+      ringColor: ['hover', 'active','focus'],
     },
   },
   plugins: [],

@@ -1,12 +1,12 @@
 <template>
   <!-- Contains contents for the screen only -->
-  <div class="w-full flex flex-col space-y-0">
+  <div class="contiainer w-full flex flex-col space-y-0">
     <div
       class="py-20 flex flex-col w-full relative items-center justify-center md:py-0 md:flex-row sm:h-screen bg-gradient-to-r from-primary to-secondary"
     >
       <div class="z-10 sm:flex-row sm:-mr-5">
         <div
-          class="max-w-3xl max-h- w-80 h-full space-y-5 md:h-full md:w-96 mx-auto p-10 bg-gray-100 rounded-xl shadow-md overflow-hidden flex flex-col md:max-w-2xl transform duration-75 hover:-translate-y-1"
+          class="max-h-full h-full space-y-5 m p-10 w-80 sm:w-96 bg-gray-100 rounded-xl shadow-md overflow-hidden flex flex-col transform duration-75 hover:-translate-y-1"
         >
           <div>
             <h2 class="text-xl text-bold">Junjie Lin</h2>
@@ -103,7 +103,7 @@
 
       <!-- Image -->
       <div
-        class="max-h-52 max-w-48 w-48 h-48 md:w-48 md:h-full items-center justify-center transform skew-y-2"
+        class="max-h-52 max-w-48 w-48 h-48 md:w-48 sm:-ml-5 md:h-full items-center justify-center transform skew-y-2"
       >
         <img
           src="../assets/profile.jpg"
@@ -115,34 +115,41 @@
 
     <!-- Projects -->
     <div
-      class="h-full sm:h-full bg-gradient-to-br py-5 from-white to-customRed flex items-center"
+      class="max-h-90 h-full bg-gradient-to-br py-5 from-white to-customRed flex items-center"
     >
-      <div class="container mx-auto p-5 sm:p-0 flex flex-col items-center space-y-2">
+      <div
+        class="container mx-auto p-5 sm:p-0 flex flex-col items-center space-y-2"
+      >
         <h1 class="text-3xl text-black font-bold py-5">Projects</h1>
-        <div
-          class="grid grid-cols-1 gap-2 align-start md:grid-cols-2 sm:gap-5"
-        >
-          <Card src="https://source.unsplash.com/daily
-" title="Cloud Storage [Spring Boot]" content="Personal cloud storage made using Spring boot" actionlink="https://github.com/ModieJun/FileStorage" actiontext="Link" actioninfo="Github Link"/>
-          <Card src="@/assets/profile.jpg" title="Something" content="Somthing" />
-          <Card title="Something" content="Somthing" />
+        <div class="grid grid-cols-1 gap-2 align-start lg:grid-cols-2 sm:gap-5">
+          <div v-for="proj in projects" :key="proj.projectName">
+            <Card
+              :src="
+                'https://source.unsplash.com/random?' +
+                proj.projectCoverImageParam
+              "
+              :title="proj.projectName"
+              :content="proj.projectInfo"
+              :actionlink="proj.projectUrl"
+              :actiontext="proj.projectLocation"
+              :actioninfo="proj.projectCodebase"
+            />
+          </div>
         </div>
       </div>
     </div>
 
     <!-- Personal stuff -->
     <div
-      class="h-full sm:h-full bg-gradient-to-bl py-5 from-customRed to-white flex items-center"
+      class="max-h-full h-full bg-gradient-to-bl py-5 from-customRed to-white flex items-center"
     >
-      <div class="container mx-auto p-5 flex flex-col items-center space-y-2">
-        <h1 class="ml-2 text-2xl text-black font-bold py-10">
+      <div
+        class="container mx-auto p-5 sm:p-0 sm:py-5 flex flex-col items-center space-y-2"
+      >
+        <h1 class="ml-2 text-2xl text-black font-bold py-5">
           Socials and Events
         </h1>
-        <div
-          class="container grid grid-cols-1 gap-4 align-start sm:grid-cols-2 sm:gap-2 sm:justify-evenly sm:align-center"
-        >
-          <Card title="Something" content="Somthing" />
-          <Card title="Something" content="Somthing" />
+        <div class="container grid grid-cols-1 gap-2 align-start lg:grid-cols-2 sm:gap-5">
           <Card title="Something" content="Somthing" />
         </div>
       </div>
@@ -176,7 +183,6 @@
             href="https://www.linkedin.com/in/junjie-lin-modiejun/"
             >LinkedIn</a
           >
-          <a class="link" href="#top">Another WAY?</a>
         </div>
         <span class="text-gray-400">@Junjie Lin 2021</span>
       </div>
@@ -190,6 +196,20 @@ export default {
   name: "Home",
   components: {
     Card,
+  },
+  data: function () {
+    return {
+      projects: [
+        {
+          projectName: "Cloud Storage [Spring Boot]",
+          projectInfo: "Personal Cloud storage made with Spring boot",
+          projectUrl: "https://github.com/ModieJun/FileStorage",
+          projectLocation: "Github",
+          projectCodebase: "Java",
+          projectCoverImageParam: "cloud",
+        },
+      ],
+    };
   },
 };
 </script>

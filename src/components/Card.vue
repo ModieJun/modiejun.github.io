@@ -1,11 +1,11 @@
 <template>
-  <div class="card">
+  <div class="card overflow-hidden">
     <div class="md:flex text-wrap">
       <div class="md:flex-shrink-0" v-if="src">
         <img
           :src="src"
           alt="Image is here"
-          class="max-h-full object-cover h-48 w-full md:h-full md:w-48"
+          class="max-h-44 max-w-44 max-w-3xl object-cover h-full w-full md:max-h-60 md:w-44"
         />
       </div>
       <div
@@ -21,10 +21,10 @@
           v-if="this.actiontext && this.actionlink"
         >
           <!-- actions -->
-          <p class="flex ">{{ actioninfo }}</p>
+          <p class="flex text-black font-bold italic">{{ actioninfo }}</p>
           <a
-            href="#"
-            class="btn px-10 md:px-5 py-2 bg-primary text-white hover:outline-primary hover:bg-white hover:text-primary"
+            :href="actionlink"
+            class="btn px-10 md:px-5 py-2 bg-primary text-white hover:ring-2 hover:ring-primary hover:bg-white hover:text-primary"
             >{{ actiontext }}</a
           >
         </div>
