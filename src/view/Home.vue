@@ -115,7 +115,7 @@
 
     <!-- Projects -->
     <div
-      class="max-h-90 h-full bg-gradient-to-br py-5 from-white to-customRed flex items-center"
+      class="max-h-90 h-full bg-gradient-to-br py-5 from-white to-secondary flex items-center"
     >
       <div
         class="container mx-auto p-5 sm:p-0 flex flex-col items-center space-y-2"
@@ -139,24 +139,14 @@
       </div>
     </div>
 
-    <!-- Personal stuff -->
-    <div
-      class="max-h-full h-full bg-gradient-to-bl py-5 from-customRed to-white flex items-center"
-    >
-      <div
-        class="container mx-auto p-5 sm:p-0 sm:py-5 flex flex-col items-center space-y-2"
-      >
-        <h1 class="ml-2 text-2xl text-black font-bold py-5">
-          Socials and Events
-        </h1>
-        <div class="container grid grid-cols-1 gap-2 align-start lg:grid-cols-2 sm:gap-5">
-          <Card title="Something" content="Somthing" />
-        </div>
-      </div>
+    <!-- Timeline of events and places ive been -->
+    <div class="flex flex-col py-5">
+      <h2 class="text-3xl text-black font-bold py-5 text-center">Milestones</h2>
+      <Timeline :timelineData="timeline" />
     </div>
 
     <!-- Footer -->
-    <div class="h-full sm:h-50">
+    <div class="h-full sm:h-50 border-t-2 ">
       <div class="container mx-auto p-10 flex flex-col">
         <div
           class="container mx-auto py-3 flex flex-col justify-between sm:flex-row"
@@ -192,10 +182,12 @@
 
 <script>
 import Card from "@/components/Card";
+import Timeline from "@/components/Timeline";
 export default {
   name: "Home",
   components: {
     Card,
+    Timeline,
   },
   data: function () {
     return {
@@ -207,6 +199,26 @@ export default {
           projectLocation: "Github",
           projectCodebase: "Java",
           projectCoverImageParam: "cloud",
+        },
+      ],
+      timeline: [
+        {
+          title: "MSc Business Information System - Graduation",
+          date: "15/05/2021",
+          description:
+            "Completed Masters degress in Business Information Systems @ City University of Hong Kong",
+        },
+        {
+          title: "BSc Computer Science",
+          date: "15/07/2020",
+          description:
+            "Completed Bachelors degree in Computer Science @ Jinan University, Guangzhou",
+        },
+        {
+          title: "Exchange Program - Ingolstadt, Germany",
+          date: "20/2/2019",
+          description:
+            "Completed exchange program in Germany, enrolled in Software development, Artificial Intelligence and Machine Learning etc.",
         },
       ],
     };
