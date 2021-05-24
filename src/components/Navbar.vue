@@ -4,8 +4,9 @@
   >
     <div class="flex flex-grow justify-evenly text-white ">
       <a href="#" class="navlink-white">Home</a>
-      <a href="#" class="navlink-white">Projects</a>
-      <a href="#" class="navlink-white">Contact Me</a>
+      <a href="#Projects" class="navlink-white">Projects</a>
+      <a href="#Milestones" class="navlink-white">Milestones</a>
+      <a href="#Footer" class="navlink-white">Contact Me</a>
     </div>
   </nav>
 </template>

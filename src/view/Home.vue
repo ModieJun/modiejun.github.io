@@ -105,11 +105,18 @@
       <div
         class="max-h-52 max-w-48 w-48 h-48 md:w-48 sm:-ml-5 md:h-full items-center justify-center transform skew-y-2"
       >
-        <img
-          src="../assets/profile.jpg"
-          alt="Image is here"
-          class="object-cover h-full rounded-xl w-full shadow-lg md:h-full md:w-48 transform ease-in-out duration-75 hover:translate-x-2 hover:-translate-y-1 hover:rotate-3"
-        />
+        <picture>
+          <source
+            type="image/webp"
+            srcset="../assets/profile.webp"
+            class="object-cover h-full rounded-xl w-full shadow-lg md:h-full md:w-48 transform ease-in-out duration-75 hover:translate-x-2 hover:-translate-y-1 hover:rotate-3"
+          />
+          <img
+            src="../assets/profile.jpg"
+            alt="Profile Image is here"
+            class="object-cover h-full rounded-xl w-full shadow-lg md:h-full md:w-48 transform ease-in-out duration-75 hover:translate-x-2 hover:-translate-y-1 hover:rotate-3"
+          />
+        </picture>
       </div>
     </div>
 
@@ -120,7 +127,7 @@
       <div
         class="container mx-auto p-5 sm:p-0 flex flex-col items-center space-y-2"
       >
-        <h1 class="text-3xl text-black font-bold py-5">Projects</h1>
+        <h1 class="text-3xl text-black font-bold py-5" id="Projects" >Projects</h1>
         <div class="grid grid-cols-1 gap-2 align-start lg:grid-cols-2 sm:gap-5">
           <div v-for="proj in projects" :key="proj.projectName">
             <Card
@@ -141,12 +148,12 @@
 
     <!-- Timeline of events and places ive been -->
     <div class="flex flex-col py-5">
-      <h2 class="text-3xl text-black font-bold py-5 text-center">Milestones</h2>
+      <h2 class="text-3xl text-black font-bold py-5 text-center" id="Milestones">Milestones</h2>
       <Timeline :timelineData="timeline" />
     </div>
 
     <!-- Footer -->
-    <div class="h-full sm:h-50 border-t-2 ">
+    <div class="h-full sm:h-50 border-t-2" id="Footer">
       <div class="container mx-auto p-10 flex flex-col">
         <div
           class="container mx-auto py-3 flex flex-col justify-between sm:flex-row"
